@@ -12,7 +12,8 @@ const todos = (previousState = [], action) => {
       {
         const newTodoObject = {
           text: action.text,
-          complete: false
+          complete: false,
+          id: previousState.length
         }
         return [...previousState, newTodoObject] //the old list plus the new one
       }
