@@ -28,7 +28,8 @@ const mapDispatchToProps = dispatch => {
       console.log('id is:', id);
       dispatch(toggleTodo(id))
     },
-    createTodo: () => { dispatch(addTodo('testing...'))}
+    createTodo: (text) => {
+    dispatch(addTodo(text))}
   }
 }
 
