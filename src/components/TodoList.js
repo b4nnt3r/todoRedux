@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
 
-const TodoList = ({ todos, onTodoClick, createTodo, showIncompletes }) => {
+const TodoList = ({ todos, onTodoClick, createTodo, showIncompletes, showAll }) => {
   let whatICallInput
   return (
   <div>
@@ -18,6 +18,7 @@ const TodoList = ({ todos, onTodoClick, createTodo, showIncompletes }) => {
       ))}
     </ul>
     <button onClick={showIncompletes}>Show the Incompletes</button>
+    <button onClick={showAll}>Show All</button>
   </div>
   )
 }

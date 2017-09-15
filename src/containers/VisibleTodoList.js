@@ -31,7 +31,10 @@ const mapDispatchToProps = dispatch => {
     createTodo: (text) => {
     dispatch(addTodo(text))},
     showIncompletes: () => {
-      dispatch(setVisibilityFilter(VisibilityFilters.SHOW_ACTIVE))
+    dispatch(setVisibilityFilter(VisibilityFilters.SHOW_ACTIVE))
+    },
+    showAll: () => {
+    dispatch(setVisibilityFilter(VisibilityFilters.SHOW_ALL))
     }
   }
 }
